@@ -35,7 +35,7 @@
       </div>
       <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
-          <a href="index.html" class="navbar-brand"><img src="{{url_for('static' , filename = 'images/logopi.png')}}" alt="" width="20%"></a>       
+          <a  class="navbar-brand"><img src="{{url_for('static' , filename = 'images/logopi2.png')}}" alt="" width="20%"></a>       
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -45,24 +45,24 @@
                 <a class="nav-link page-scroll" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">About</a>
+                <a class="nav-link page-scroll" href="#services">Label</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#business-plan">Services</a>
-              </li>                            
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#testimonial">Testimoni</a>
-              </li>       
+                <a class="nav-link page-scroll" href="#business-plan">Desc</a>
+              </li>         
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Team</a>
-              </li> 
+              </li>                           
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#testimonial">Mitra</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#contact">Contact</a>
               </li> 
               {% if session %}
               <li class="nav-item">
                 <a href="{{ url_for('dashboard') }}">
-                <span class="font-w600 ml-2 nav-link page-scroll ml-4"><i class="fa-solid fa-user mr-2"></i>{{session.username}}</span>
+                <span class="font-w600 ml-2 nav-link page-scroll ml-4 d-flex"><i class="fa-solid fa-user mr-2"></i>{{session.username}}</span>
                 </a>
               </li> 
               {% else %}
@@ -92,12 +92,12 @@
               {% endif %}
               {% endwith %}
               </p> -->
-              <h2 class="head-title">You are Using Free Lite Version</h2>
-              <p>Please, Purchase full version of Slick to get all pages, features and permission to use in commercial projects</p>
+              <h2 class="head-title">Temukan Ketertarikan Anda Disini!</h2>
+              <p>Cari tahu ketertarikan anda, hanya dengan memasukkan username Instagram anda.</p>
               <div class="header-button">
                 <form method="post" action="/success" class="search-bar">
                   <input type="hidden" name="id_user" value="{{session.id}}">
-                  <input type="search" required placeholder="Input Username IG" name="username">
+                  <input type="search" required placeholder="Masukkan Username Instagram" name="username">
                   <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
 
@@ -123,35 +123,47 @@
 
         <div class="row">
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fas fa-hamburger"></i>
               </div>
-              <h4>Bootstrap 4</h4>
-              <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
+              <h4>Food</h4>
+              <p>Akun yang sering memposting tentang makanan, minuman, atau semacamnya.
+              </p>
             </div>
           </div>
           <!-- End Col -->
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon">
-                <i class="fa-solid fa-chart-column"></i>
+                <i class="fas fa-plane-arrival"></i>
               </div>
-              <h4>Slick Design</h4>
-              <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
+              <h4>Travelling</h4>
+              <p>Akun yang sering memposting tentang liburannya, explore alam, keliling dunia.</p>
             </div>
           </div>
           <!-- End Col -->
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon">
-                <i class="fa-sharp fa-solid fa-hand-holding-heart"></i>
+                <i class="fas fa-motorcycle"></i>
               </div>
-              <h4>Crafted with Love</h4>
-              <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
+              <h4>Otomotif</h4>
+              <p>Akun yang sering memposting kendaraan, bagian-bagian badan kendaraan.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="fas fa-tshirt"></i>
+              </div>
+              <h4>Fashion Beauty</h4>
+              <p>Akun yang sering memposting tentang make up, kecantikan dan OOTD.</p>
             </div>
           </div>
           <!-- End Col -->
@@ -176,10 +188,10 @@
           <!-- Start Col -->
           <div class="col-lg-6 col-md-12 pl-4">
             <div class="business-item-info">
-              <h3>Crafted For Business, Startup and Agency Websites</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br> commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <h3>INSPO (Interest People)</h3>
+              <p>INSPO adalah platform yang dapat menampilkan persentase ketertarikan seseorang berdasarkan postingan Instagram. Setiap postingan dianalisis dan diberi label, apakah postingan tersebut masuk ke dalam kategori 'Food', 'Travelling',  'Otomotif', atau 'Fashion Beauty'.</p>
 
-              <a class="btn btn-common" href="#">download</a>
+              <a class="btn btn-common" href="#">Coba Sekarang</a>
             </div>
           </div>
           <!-- End Col -->
@@ -189,135 +201,22 @@
     </section>
     <!-- Business Plan Section End -->
 
-    <!-- Client Testimoninals Section Start -->
-    <section id="testimonial" class="section">
-      <div class="container right-position">
-        <!-- Start Row -->
-          <div class="row gradient-bg">
-            <div class="col-lg-12">
-              <div class="showcase-text section-header text-center">  
-                <div>   
-                  <h2 class="section-title">Testimony</h2>
-                  <div class="desc-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>  
-                    <p>eiusmod tempor incididunt ut labore et dolore.</p>
-                  </div>
-                </div> 
-              </div>
-            </div>
-          <!-- End Row -->
-        </div>
-        <!-- End Row -->
-        <!-- Start Row -->
-        <div class="row justify-content-center testimonial-area">
-          <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 pr-20 pl-20" style="overflow: hidden;padding-bottom: 60px">
-            <div id="client-testimonial" class="text-center owl-carousel">
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img width="90px" src="{{url_for('static' , filename = 'landing_page/img/testimonial/01.png')}}" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img width="90px" src="{{url_for('static' , filename = 'landing_page/img/testimonial/01.png')}}" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img width="90px" src="{{url_for('static' , filename = 'landing_page/img/testimonial/01.png')}}" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img width="90px" src="{{url_for('static' , filename = 'landing_page/img/testimonial/01.png')}}" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img width="90px" src="{{url_for('static' , filename = 'landing_page/img/testimonial/01.png')}}" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img width="90px" src="{{url_for('static' , filename = 'landing_page/img/testimonial/01.png')}}" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- End Row -->
-      </div>
-    </section>
-    <!-- Client Testimoninals Section End --> 
-
 
     <!-- Team section Start -->
     <section id="team" class="section">
       <div class="container">
         <!-- Start Row -->
-        <div class="row">
+        <div class="row gradient-bg">
           <div class="col-lg-12">
-            <div class="team-text section-header text-center">  
+            <div class="showcase-text section-header text-center">  
               <div>   
-                <h2 class="section-title">Team Members</h2>
+                <h2 class="section-title">Team Member</h2>
                 <div class="desc-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>  
-                  <p>eiusmod tempor incididunt ut labore et dolore.</p>
+                  <p></p>
                 </div>
               </div> 
             </div>
           </div>
-
-        </div>
         <!-- End Row -->
         <!-- Start Row -->
         <div class="row">
@@ -451,6 +350,50 @@
     </section>
     <!-- Team section End -->
 
+        <!-- Client Testimoninals Section Start -->
+        <section id="testimonial" class="section">
+          <div class="container right-position">
+            <!-- Start Row -->
+              <div class="row gradient-bg">
+                <div class="col-lg-12">
+                  <div class="showcase-text section-header text-center">  
+                    <div>   
+                      <h2 class="section-title">Mitra</h2>
+                      <div class="desc-text">
+                        <p>PT. GLOBAL DATA INSPIRASI</p> 
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Row -->
+            <!-- Start Row -->
+            <div class="row justify-content-center testimonial-area">
+              <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 pr-20 pl-20" style="overflow: hidden;padding-bottom: 60px">
+                <div id="client-testimonial" class="text-center owl-carousel">
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <div class="content-inner">
+                        <p class="description">Datains didirikan tahun 2008 dan merupakan anak perusahaan dari Gamatechno dengan laman website https://datains.id.</p>
+                        <div class="author-info">
+                          <h5>Jl. Cik Di Tiro 34, Yogyakarta</span></h5>
+                        </div>
+                      </div>
+                      <div class="client-thumb">
+                        <img width="90px" src="{{url_for('static' , filename = 'images/gambar_209.png')}}" alt="">
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+        </section>
+        <!-- Client Testimoninals Section End --> 
+
     <!-- Contact Us Section -->
     <section id="contact" class="section">
       <!-- Container Starts -->
@@ -517,15 +460,8 @@
           </div>
           <!-- End Col -->
           <!-- Start Col -->
-          <div class="col-lg-1">
-            
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-4 col-md-12">
-            <div class="contact-img">
-              <img src="{{url_for('static' , filename = 'landing_page/img/contact/01.png')}}" class="img-fluid" alt="">
-            </div>
+          <div class="col-lg-6 col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.694019284036!2d113.723187!3d-8.1600155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf6c4437632474338!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1654235992773!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 384px;"></iframe>
           </div>
           <!-- End Col -->
           <!-- Start Col -->
@@ -551,7 +487,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               
               <div class="footer-logo">
-               <img src="{{url_for('static' , filename = 'landing_page/img/footer-logo.png')}}" alt="">
+                <img src="{{url_for('static' , filename = 'images/logopi2.png')}}" alt="" width="50%">
               </div>
             </div>
              <!-- End Col -->
